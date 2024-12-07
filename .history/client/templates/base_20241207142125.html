@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Menu Bar Homepage</title>
+    <style>
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Fixed Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            overflow: hidden;
+            z-index: 1000; /* Ensures the navbar stays on top */
+        }
+
+        /* Navbar links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        /* Active/current link */
+        .navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Page content */
+        .content {
+            padding: 80px 20px; /* Add top padding to avoid content being hidden under the navbar */
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, stack the links vertically */
+        @media screen and (max-width: 600px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#map">Map</a>
+        <a href="#events">Events</a>
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+        <section id="home">
+            <h1>Welcome to the Home Page</h1>
+            <p>This is the home section of your website. You can add more content here.</p>
+        </section>
+
+        <section id="map">
+            <h1>Map Section</h1>
+            <p>Here you can embed a map or provide map-related information.</p>
+        </section>
+
+        <section id="events">
+            <h1>Events Section</h1>
+            <p>List your upcoming events or any event-related information here.</p>
+        </section>
+
+        <!-- Additional content to demonstrate scrolling -->
+        <section>
+            <h2>More Content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet tincidunt ipsum. Donec vitae lectus nec ligula placerat ultrices. Suspendisse potenti. Cras aliquet tincidunt lectus, vel interdum urna malesuada at. Phasellus at sapien et lorem interdum tincidunt. Donec ultrices urna non libero consectetur, non bibendum purus aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam vitae nibh nec tortor cursus fringilla.</p>
+            <!-- Repeat or add more content as needed -->
+        </section>
+    </div>
+
+</body>
+</html>

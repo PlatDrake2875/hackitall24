@@ -39,23 +39,3 @@ form button {
 form button:hover {
     background-color: #0056b3;
 }
-
-.horizontal-bar {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    padding: 10px;
-}
-
-.horizontal-bar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.horizontal-bar a:hover {
-    background-color: #555;
-}

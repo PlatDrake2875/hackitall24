@@ -12,11 +12,7 @@
         <h1>My Flask App</h1>
     </header>
     <nav>
-        <div class="horizontal-bar">
-            <a href="{{ url_for('main.index') }}">Profile</a>
-            <a href="{{ url_for('main.eventmap') }}">Map</a>
-            <a href="{{ url_for('main.events') }}">Events</a>
-        </div>
+        {% block navbar %}{% endblock %}
     </nav>
     <main>
         {% block content %}{% endblock %}

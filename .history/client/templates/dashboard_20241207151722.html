@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block navbar %}
+    <div class="horizontal-bar">
+        <a href="{{ url_for('main.profile') }}">Profile</a>
+        <a href="{{ url_for('main.map') }}">Map</a>
+        <a href="{{ url_for('main.events') }}">Events</a>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <h2>Welcome to the Dashboard</h2>
+    <p>Select an option from the navigation bar above.</p>
+{% endblock %}
